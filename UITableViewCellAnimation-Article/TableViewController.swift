@@ -10,16 +10,15 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
-	private var animator = AnimatorFactory.makeSlideIn()
-
 	@IBAction func onRefresh(_ sender: UIBarButtonItem) {
-		animator = AnimatorFactory.makeSlideIn()
 		tableView.reloadData()
 	}
 
 	// MARK: - Table view data source and delegate methods
 
 	override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+		let animation = AnimationFactory.makeSlideIn(duration: 0.5, delayFactor: 0.05)
+		let animator = Animator(animation: animation)
 		animator.animate(cell: cell, at: indexPath, in: tableView)
 	}
 }

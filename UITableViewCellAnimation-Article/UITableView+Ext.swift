@@ -10,7 +10,7 @@ import UIKit
 
 extension UITableView {
 	func isLastVisibleCell(at indexPath: IndexPath) -> Bool {
-		guard let indexPathsForVisibleRows = self.indexPathsForVisibleRows, let lastIndexPath = indexPathsForVisibleRows.last else {
+		guard let lastIndexPath = indexPathsForVisibleRows?.last else {
 			return false
 		}
 

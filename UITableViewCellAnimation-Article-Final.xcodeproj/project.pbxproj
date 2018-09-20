@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D7239181213E7CF900E0D4E5 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7239180213E7CF900E0D4E5 /* UITableView+Ext.swift */; };
-		D7239183213E7D1F00E0D4E5 /* DynamicsParallaxTableCellAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7239182213E7D1F00E0D4E5 /* DynamicsParallaxTableCellAnimator.swift */; };
 		D7239187213E986000E0D4E5 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7239186213E986000E0D4E5 /* Animations.swift */; };
 		D7239189213EA08700E0D4E5 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7239188213EA08700E0D4E5 /* Animator.swift */; };
 		D7C6B695213E6861002A7BB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6B694213E6861002A7BB1 /* AppDelegate.swift */; };
@@ -20,7 +19,6 @@
 
 /* Begin PBXFileReference section */
 		D7239180213E7CF900E0D4E5 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
-		D7239182213E7D1F00E0D4E5 /* DynamicsParallaxTableCellAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicsParallaxTableCellAnimator.swift; sourceTree = "<group>"; };
 		D7239186213E986000E0D4E5 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		D7239188213EA08700E0D4E5 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		D7C6B691213E6861002A7BB1 /* UITableViewCellAnimation-Article-Final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UITableViewCellAnimation-Article-Final.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,17 +41,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D723918A213EA13900E0D4E5 /* Animation */ = {
-			isa = PBXGroup;
-			children = (
-				D7239186213E986000E0D4E5 /* Animations.swift */,
-				D7239188213EA08700E0D4E5 /* Animator.swift */,
-				D7239182213E7D1F00E0D4E5 /* DynamicsParallaxTableCellAnimator.swift */,
-				D7239180213E7CF900E0D4E5 /* UITableView+Ext.swift */,
-			);
-			path = Animation;
-			sourceTree = "<group>";
-		};
 		D7C6B688213E6861002A7BB1 = {
 			isa = PBXGroup;
 			children = (
@@ -75,11 +62,13 @@
 			children = (
 				D7C6B694213E6861002A7BB1 /* AppDelegate.swift */,
 				D7C6B696213E6861002A7BB1 /* TableViewController.swift */,
-				D723918A213EA13900E0D4E5 /* Animation */,
-				D7C6B698213E6861002A7BB1 /* Main.storyboard */,
+				D7239186213E986000E0D4E5 /* Animations.swift */,
+				D7239188213EA08700E0D4E5 /* Animator.swift */,
+				D7239180213E7CF900E0D4E5 /* UITableView+Ext.swift */,
 				D7C6B69B213E6862002A7BB1 /* Assets.xcassets */,
-				D7C6B69D213E6862002A7BB1 /* LaunchScreen.storyboard */,
 				D7C6B6A0213E6862002A7BB1 /* Info.plist */,
+				D7C6B69D213E6862002A7BB1 /* LaunchScreen.storyboard */,
+				D7C6B698213E6861002A7BB1 /* Main.storyboard */,
 			);
 			path = "UITableViewCellAnimation-Article";
 			sourceTree = "<group>";
@@ -157,7 +146,6 @@
 			files = (
 				D7239189213EA08700E0D4E5 /* Animator.swift in Sources */,
 				D7239187213E986000E0D4E5 /* Animations.swift in Sources */,
-				D7239183213E7D1F00E0D4E5 /* DynamicsParallaxTableCellAnimator.swift in Sources */,
 				D7C6B697213E6861002A7BB1 /* TableViewController.swift in Sources */,
 				D7239181213E7CF900E0D4E5 /* UITableView+Ext.swift in Sources */,
 				D7C6B695213E6861002A7BB1 /* AppDelegate.swift in Sources */,
