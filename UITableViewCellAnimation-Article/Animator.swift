@@ -9,20 +9,30 @@
 import UIKit
 
 final class Animator {
-	private var hasAnimatedAllCells = false
-	private let animation: Animation
-
-	init(animation: @escaping Animation) {
-		self.animation = animation
-	}
-
-	func animate(cell: UITableViewCell, at indexPath: IndexPath, in tableView: UITableView) {
-		guard !hasAnimatedAllCells else {
-			return
-		}
-
-		animation(cell, indexPath, tableView)
-
-		hasAnimatedAllCells = tableView.isLastVisibleCell(at: indexPath)
-	}
+    private var hasAnimatedAllCells = false
+    private let animation: Animation
+    
+    init(animation: @escaping Animation) {
+        self.animation = animation
+    }
+    
+    func animate(cell: UIView, at indexPath: IndexPath, in scrollView: UIScrollView) {
+        guard !hasAnimatedAllCells else {
+            return
+        }
+        
+        switch(scrollView) {
+        case is UICollectionView:
+            animation(cell, indexPath, scrollView as! UICollectionView)
+            hasAnimatedAllCells = (scrollView as! UICollectionView).isLastVisibleCell(at: indexPath)
+            break;
+        case is UITableView:
+            animation(cell, indexPath, scrollView as! UITableView)
+            hasAnimatedAllCells = (scrollView as! UITableView).isLastVisibleCell(at: indexPath)
+        // Add additional handling for UIScrollView derived types of your choice.
+        default:
+            break;
+        }
+    }
+    
 }

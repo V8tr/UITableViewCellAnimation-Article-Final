@@ -17,3 +17,12 @@ extension UITableView {
 		return lastIndexPath == indexPath
 	}
 }
+
+extension UICollectionView {
+    func isLastVisibleCell(at indexPath: IndexPath) -> Bool {
+        guard let lastIndexPath = indexPathsForVisibleItems.last else {
+            return false
+        }
+        return lastIndexPath == indexPath
+    }
+}

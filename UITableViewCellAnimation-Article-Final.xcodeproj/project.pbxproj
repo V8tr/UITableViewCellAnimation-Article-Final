@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D7239181213E7CF900E0D4E5 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7239180213E7CF900E0D4E5 /* UITableView+Ext.swift */; };
+		D7239181213E7CF900E0D4E5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7239180213E7CF900E0D4E5 /* Extensions.swift */; };
 		D7239187213E986000E0D4E5 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7239186213E986000E0D4E5 /* Animations.swift */; };
 		D7239189213EA08700E0D4E5 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7239188213EA08700E0D4E5 /* Animator.swift */; };
 		D7C6B695213E6861002A7BB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6B694213E6861002A7BB1 /* AppDelegate.swift */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D7239180213E7CF900E0D4E5 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		D7239180213E7CF900E0D4E5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D7239186213E986000E0D4E5 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		D7239188213EA08700E0D4E5 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		D7C6B691213E6861002A7BB1 /* UITableViewCellAnimation-Article-Final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UITableViewCellAnimation-Article-Final.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +64,7 @@
 				D7C6B696213E6861002A7BB1 /* TableViewController.swift */,
 				D7239186213E986000E0D4E5 /* Animations.swift */,
 				D7239188213EA08700E0D4E5 /* Animator.swift */,
-				D7239180213E7CF900E0D4E5 /* UITableView+Ext.swift */,
+				D7239180213E7CF900E0D4E5 /* Extensions.swift */,
 				D7C6B69B213E6862002A7BB1 /* Assets.xcassets */,
 				D7C6B6A0213E6862002A7BB1 /* Info.plist */,
 				D7C6B69D213E6862002A7BB1 /* LaunchScreen.storyboard */,
@@ -147,7 +147,7 @@
 				D7239189213EA08700E0D4E5 /* Animator.swift in Sources */,
 				D7239187213E986000E0D4E5 /* Animations.swift in Sources */,
 				D7C6B697213E6861002A7BB1 /* TableViewController.swift in Sources */,
-				D7239181213E7CF900E0D4E5 /* UITableView+Ext.swift in Sources */,
+				D7239181213E7CF900E0D4E5 /* Extensions.swift in Sources */,
 				D7C6B695213E6861002A7BB1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
